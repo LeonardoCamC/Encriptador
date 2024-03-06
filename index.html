@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador Challenge</title>
+</head>
+
+<body>
+    <header>
+        <div class="encabezado">
+            <img class="banner" src="imagenes/banner.png" alt="banner logo del encriptador">
+            <img class="logo" src="imagenes/Logo.png" alt="logo de alura LATAM">
+            <h1 class="titulo">E N C R I P T A D O R</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="seccionIzq">
+            <div class="encriptador">
+                <textarea class="encriptar" placeholder="Por favor ingresa el texto aquí que deseas encriptar"></textarea>
+            </div>
+            <div class="alerta">
+                <img class="aviso" src="/imagenes/alerta.svg" alt="icono alerta">
+                <p class="mensaje-aviso">Nota: Solamente puedes utilizar letras minúsculas, sin acentos o caracteres especiales</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccionDer">
+            <div class="imagenMuñeco">
+                <img class="munieco" src="/imagenes/munieco.png" alt="Imagen de un muñeco con una llave en la mano">
+            </div>
+            <div class="textoMensajes">
+                <h3 class="primerMensaje">Ningún mensaje fue <br> encontrado</h3>
+                <p class="segundoMensaje">Ingresa el texto que deseas Encriptar o <br>Desencriptar.</p> 
+            </div>
+            <div class="botonCopiar">
+                <button class="btn-copiar" onclick="btnCopiar() ">Copiar</button>
+            </div>
+            <div class="resultado">
+                <textarea class="evaluar" readonly></textarea>
+            </div>
+        </section>
+    </main>
+
+    <script src="/script.js"></script>
+
+</body>
+
+    <footer>
+        <p class="copyright">© Copyright 2024 - Encriptador Challenge</p>
+        <p class="datos">ONE G6 | Leonardo Cámara Castillo</p>
+    </footer>
+
+</html>
+
